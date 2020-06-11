@@ -1,0 +1,110 @@
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background-color: white;
+  display: flex;
+  text-align: center;
+  font-family: 'Lato', 'sans-serif';
+
+  .login-form {
+    padding: 40px 30px 40px 30px;
+    position: relative;
+
+    .close-popup-form {
+      position: absolute;
+      top: -7px;
+      right: -7px;
+      font-size: 28px;
+      cursor: pointer;
+      &:hover { color: $secondary-color; }
+      &:active { font-size: 26px;}
+    }
+
+    &__title {
+      font-size: 25px;
+      margin-bottom: $marg-bottom-small;
+      font-family: 'Lobster', cursive;
+    }
+
+    #login-form__email { width: 78%; }
+
+    &__input {
+      margin-bottom: $marg-bottom-small;
+      position: relative;
+      
+      .input {
+        padding: 13px 25px;
+        border: 1px solid rgba(0, 0, 0, 0.623);
+      }
+    }
+
+    #login-form__password { padding-right: 40px; }
+
+    #login-form__password:focus + .notification-popup {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &__terms {
+      margin-bottom: $marg-bottom-big;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      #terms-checkbox { opacity: 0; }
+      #terms-checkbox + label::after { content: none; }
+      #terms-checkbox:checked + label::after { content: ""; }
+      
+      label {
+        position: relative;
+        margin-left: 10px;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          height: 14px;
+          width: 14px;
+          border: 1px solid;  
+          position: absolute;
+          top: 3px;
+          left: -28.5px;
+        }
+
+        &::after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          height: 5px;
+          width: 8px;
+          border-left: 3px solid;
+          border-bottom: 3px solid;
+          transform: rotate(-45deg);
+          top: 6px;
+          left: -26px;
+        }
+      }
+    }
+
+    .btn-submit {
+      height: 20px;
+      width: 82%;
+      padding: 12px 20px;
+      background-color: black;
+      cursor: pointer;
+      font-size: 12px;
+      color: white;
+    }
+  }
+}
+
+.hidden { display: none; }
+
+.hidden-visibility { 
+  opacity: 0; 
+  visibility: hidden;
+}
+
+.invalid{ border: 1px solid red !important; }

@@ -1,12 +1,15 @@
 // Main styles
-$primary-color: #fcaf32;
-$secondary-color: #fc888e;
-
-html,
-body {
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-  padding: 0;
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	list-style: none;
+	resize: none;
+  box-sizing: inherit;
+  outline: none;
 }
 
 .main {
@@ -29,7 +32,5 @@ body {
   padding: 0 20px;
   transition: transform .5s ease;
 
-  &:hover {
-    transform: scale(1.15);
-  }
+  &:hover { transform: scale(1.15); }
 }
