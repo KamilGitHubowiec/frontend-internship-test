@@ -96,6 +96,7 @@
       cursor: pointer;
       font-size: 12px;
       color: white;
+      &:hover{ background-color: $secondary-color; }
     }
   }
 }
