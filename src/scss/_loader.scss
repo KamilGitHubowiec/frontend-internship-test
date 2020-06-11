@@ -1,0 +1,14 @@
+.loader {
+  position: absolute;
+  left: 46%;
+  bottom: 15px;
+  font-size: 25px;
+  animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); }
+}

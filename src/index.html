@@ -29,6 +29,19 @@
 
         <div class="login-form__input password-container">
           <input type="password" placeholder="Password" class="input" id="login-form__password" required>
+          <div class="notification-popup hidden-visibility">
+            <div class="notification-popup__message">
+              <div class="notification-exclamation-mark-background"><i class="fas fa-exclamation"></div></i>
+              <span class="notification-title">Hasło powinno zawierać:</span>
+            </div>
+            <ul>
+              <li>- 8 do 15 znaków</li>
+              <li>- conajmniej jedną wielką literę</li>
+              <li>- conajmniej jedną cyfrę</li>
+              <li>- conajmniej jeden znak specjalny</li>
+            </ul>
+          </div>
+          <i class="fas fa-eye password-visibility"></i>
         </div>
 
         <div class="login-form__terms">
