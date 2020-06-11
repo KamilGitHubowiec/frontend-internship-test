@@ -34,3 +34,10 @@
 
   &:hover { transform: scale(1.15); }
 }
+
+.success-message {
+  margin-bottom: $marg-bottom-small;
+  font-family: 'Lobster', cursive;
+  font-size: 42px;
+  font-weight: 400;
+}

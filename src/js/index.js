@@ -19,6 +19,20 @@ buttonClosePopupForm.addEventListener('click', () => {
   popup.classList.add('hidden');
 })
 
+// Form listener
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  
+  // Form validation
+
+  // Render loader to the DOM
+  // Display success message after 3 seconds
+  setTimeout(() => {
+    buttonShowPopupForm.classList.add('hidden');
+    popup.classList.add('hidden');
+    successMessage.classList.remove('hidden');
+  }, 3000)
+})
 
 
 
